@@ -8,7 +8,9 @@ Mandatory part and Bonus part have the same code.
 
 This code has been implemented as a linked list.
   해당 코드는 연결리스트로 구현하였습니다
+  
 --------------------
+
 >1. Locate the node with the fd value in the head list and separate it.
 > >fd값이 있는 node를 head list에서 찾아 분리합니다.
 
