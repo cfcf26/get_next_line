@@ -4,10 +4,12 @@ The score is 125%.
 스코어는 125% 입니다.
 
 Mandatory part and Bonus part have the same code.
-  멘덴토리와 보너스는 동일한 코드입니다.
+
+멘덴토리와 보너스는 동일한 코드입니다.
 
 This code has been implemented as a linked list.
-  해당 코드는 연결리스트로 구현하였습니다
+
+해당 코드는 연결리스트로 구현하였습니다
   
 --------------------
 
