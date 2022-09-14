@@ -4,10 +4,10 @@ The score is 125%.
 스코어는 125% 입니다.
 
 Mandatory part and Bonus part have the same code.
-멘덴토리와 보너스는 동일한 코드입니다.
+  멘덴토리와 보너스는 동일한 코드입니다.
 
 This code has been implemented as a linked list.
-해당 코드는 연결리스트로 구현하였습니다
+  해당 코드는 연결리스트로 구현하였습니다
 
 1. Locate the node with the fd value in the head list and separate it.
   1. fd값이 있는 node를 head list에서 찾아 분리합니다.
