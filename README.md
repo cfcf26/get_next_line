@@ -1,32 +1,34 @@
-# get_next_line
+# Get Next Line Project
 
-The score is 125%.
-스코어는 125% 입니다.
+## Introduction
 
-Mandatory part and Bonus part have the same code.
+The Get Next Line project involves programming a function that reads a line from a file descriptor. The project emphasizes the use of static variables in C programming. Successful completion allows for the addition of get_next_line() to the libft library for use in school C projects.
 
-멘덴토리와 보너스는 동일한 코드입니다.
+## Project Objectives
 
-This code has been implemented as a linked list.
+- The project must be written in C.
+- The project must be written in accordance with the Norm. If you have bonus files/functions, they are included in the norm check and you will receive a 0 if there is a norm error inside.
+- Your functions should not quit unexpectedly (segmentation fault, bus error, double free, etc) apart from undefined behaviors. If this happens, your project will be considered non-functional and will receive a 0 during the evaluation.
+- All heap allocated memory space must be properly freed when necessary. No leaks will be tolerated.
+- If the subject requires it, you must submit a Makefile which will compile your source files to the required output with the flags -Wall, -Wextra and -Werror, use cc, and your Makefile must not relink.
+- Your Makefile must at least contain the rules $(NAME), all, clean, fclean and re.
+- Submit your work to your assigned git repository. Only the work in the git repository will be graded.
 
-해당 코드는 연결리스트로 구현하였습니다
-  
---------------------
+## Mandatory Part
 
->1. Locate the node with the fd value in the head list and separate it.
-> >fd값이 있는 node를 head list에서 찾아 분리합니다.
+- Program name: get_next_line
+- Turn in files: get_next_line.c, get_next_line.h, get_next_line_utils.c
+- External functions: read, malloc, free
+- Libft authorized: No
+- Description: Write a function that returns a line read from a file descriptor.
 
->2. Find newline in str of the node you found.
-> >찾은 node의 str에서 newline을 찾습니다.
+## Bonus Part
 
->3. If there is no new line, read it to create a new_node,
-   attach it to the front of the existing node, and then run 2.
-   if Then find the new line or EOF, run 4.
-> >new line이 없을 경우 read하여 새로운 new_node를 만들고
-   기존의 node의 앞에 이어붙인 후 2.를 다시 실행합니다. 그리고 new line을 찾거나 EOF이면 4.를 실행합니다.
+- Develop get_next_line() using only one static variable.
+- Your get_next_line() can manage multiple file descriptors at the same time. For example, if you can read from the file descriptors 3, 4 and 5, you should be able to read from a different fd per call without losing the reading thread of each file descriptor or returning a line from another fd.
+- Append the _bonus.[c\\h] suffix to the bonus part files. It means that, in addition to the mandatory part files, you will turn in the 3 following files: get_next_line_bonus.c, get_next_line_bonus.h, get_next_line_utils_bonus.c
+- The bonus part will only be assessed if the mandatory part is PERFECT. Perfect means the mandatory part has been integrally done and works without malfunctioning. If you have not passed ALL the mandatory requirements, your bonus part will not be evaluated at all.
 
->4. Save the value after the new line to the new_node and connect it to the head list.
-> >new line 이후의 값을 new_node에 저장하고 head list의 앞에 이어줍니다.
+## Submission and Peer-evaluation
 
->5. Get a node list, complete it with one stirng, and return it.
-> >node list를 가져와 하나의 문장으로 완성하고 리턴합니다.
+Turn in your assignment in your Git repository as usual. Only the work inside your repository will be evaluated during the defense. Don’t hesitate to double check the names of your files to ensure they are correct. Once passed, do not hesitate to add your get_next_line() to your libft.
